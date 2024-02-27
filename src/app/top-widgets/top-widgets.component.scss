@@ -1,0 +1,67 @@
+.widget-container {
+  display: flex;
+  align-items: space-between;
+  .widget {
+    width: 325px;
+    height: 125px;
+    background-color: #fff;
+    color: #fff;
+    border-radius: 5px;
+    margin: 10px;
+    box-shadow: 2px 2px 6px #939393;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    &.purple {
+      background: linear-gradient(230deg, #aa66cc, #ca9fdf);
+    }
+    &.blue {
+      background: linear-gradient(230deg, #33b5e5, #77ceee);
+    }
+    &.green {
+      background: linear-gradient(230deg, #28c76f, #5dde97);
+    }
+    &.orange {
+      background: linear-gradient(230deg, #ff9f43, #ffc690);
+    }
+    @media only screen and (max-width: 1600px) {
+      width: 275px;
+    }
+    @media only screen and (max-width: 1500px) {
+      width: 245px;
+    }
+    @media only screen and (max-width: 1400px) {
+      width: 225px;
+    }
+    @media only screen and (max-width: 1200px) {
+      width: 200px;
+    }
+
+    .icon {
+      width: 100px;
+      font-size: 40px;
+      text-align: center;
+      @media only screen and (max-width: 1200px) {
+        font-size: 35px;
+      }
+    }
+    .value {
+      text-align: center;
+      width: 175px;
+      .top {
+        font-size: 30px;
+        font-weight: 600;
+        @media only screen and (max-width: 1200px) {
+          font-size: 26px;
+        }
+      }
+      .bottom {
+        font-size: 16px;
+        margin-top: 6px;
+        @media only screen and (max-width: 1200px) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
